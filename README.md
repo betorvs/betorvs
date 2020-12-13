@@ -19,41 +19,11 @@
 [![betorvs github stats](https://github-readme-stats.vercel.app/api?username=betorvs&show_icons=true)](https://github.com/betorvs/betorvs)
 
 
-## 🤔 Repositories
+## 🤔 Latest Releases
 
-### Golang
-
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=betorvs&repo=sonarqube-to-gitlab-webhook)](https://github.com/betorvs/sonarqube-to-gitlab-webhook)
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=betorvs&repo=secretpublisher)](https://github.com/betorvs/secretpublisher)
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=betorvs&repo=secretreceiver)](https://github.com/betorvs/secretreceiver)
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=betorvs&repo=sensubot)](https://github.com/betorvs/sensubot)
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=betorvs&repo=sensu-operator)](https://github.com/betorvs/sensu-operator)
-
-### Sensu (golang again)
-
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=betorvs&repo=sensu-opsgenie-handler)](https://github.com/betorvs/sensu-opsgenie-handler)
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=betorvs&repo=sensu-hangouts-chat-handler)](https://github.com/betorvs/sensu-hangouts-chat-handler)
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=betorvs&repo=sensu-grafana-mutator)](https://github.com/betorvs/sensu-grafana-mutator)
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=betorvs&repo=sensu-dynamic-check-mutator)](https://github.com/betorvs/sensu-dynamic-check-mutator)
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=betorvs&repo=sensu-alertmanager-events)](https://github.com/betorvs/sensu-alertmanager-events)
-
-### Helm and Ansible (a little old)
-
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=betorvs&repo=sensu-go-statefulset)](https://github.com/betorvs/sensu-go-statefulset)
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=betorvs&repo=ansible-sensu-go-agent)](https://github.com/betorvs/ansible-sensu-go-agent)
-
-
-<!--
-**betorvs/betorvs** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+[sensu-opsgenie-handler](https://github.com/betorvs/sensu-opsgenie-handler/releases/tag/1.0.0) 1.0.0 - 2020-11-20   
+[sensu-hangouts-chat-handler](https://github.com/betorvs/sensu-hangouts-chat-handler/releases/tag/0.0.9) 0.0.9 - 2020-12-03   
+[sensu-alertmanager-events](https://github.com/betorvs/sensu-alertmanager-events/releases/tag/0.0.3-rc1) 0.0.3-rc1 - 2020-12-10   
+[sensu-grafana-mutator](https://github.com/betorvs/sensu-grafana-mutator/releases/tag/0.0.2-rc1) 0.0.2-rc1 - 2020-12-08   
+[sensu-dynamic-check-mutator](https://github.com/betorvs/sensu-dynamic-check-mutator/releases/tag/0.0.1-rc2) 0.0.1-rc2 - 2020-12-10   
+[sensu-kubernetes-events](https://github.com/betorvs/sensu-kubernetes-events/releases/tag/0.0.1-rc7) 0.0.1-rc7 - 2020-12-10   
