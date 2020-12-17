@@ -25,5 +25,5 @@
 [sensu-hangouts-chat-handler](https://github.com/betorvs/sensu-hangouts-chat-handler/releases/tag/0.0.9) 0.0.9 - 2020-12-03   
 [sensu-alertmanager-events](https://github.com/betorvs/sensu-alertmanager-events/releases/tag/0.0.3-rc2) 0.0.3-rc2 - 2020-12-16   
 [sensu-grafana-mutator](https://github.com/betorvs/sensu-grafana-mutator/releases/tag/0.0.2-rc1) 0.0.2-rc1 - 2020-12-08   
-[sensu-dynamic-check-mutator](https://github.com/betorvs/sensu-dynamic-check-mutator/releases/tag/0.0.1-rc3) 0.0.1-rc3 - 2020-12-16   
+[sensu-dynamic-check-mutator](https://github.com/betorvs/sensu-dynamic-check-mutator/releases/tag/0.0.1-rc4) 0.0.1-rc4 - 2020-12-17   
 [sensu-kubernetes-events](https://github.com/betorvs/sensu-kubernetes-events/releases/tag/0.0.1-rc7) 0.0.1-rc7 - 2020-12-10   
