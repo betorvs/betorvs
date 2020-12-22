@@ -21,6 +21,8 @@
 
 ## 🤔 Latest Releases
 
+[sonarqube-to-gitlab-webhook]()  - 0001-01-01   
+[event-logger]()  - 0001-01-01   
 [sensu-opsgenie-handler](https://github.com/betorvs/sensu-opsgenie-handler/releases/tag/1.0.0) 1.0.0 - 2020-11-20   
 [sensu-hangouts-chat-handler](https://github.com/betorvs/sensu-hangouts-chat-handler/releases/tag/0.0.9) 0.0.9 - 2020-12-03   
 [sensu-alertmanager-events](https://github.com/betorvs/sensu-alertmanager-events/releases/tag/0.0.3-rc3) 0.0.3-rc3 - 2020-12-17   
