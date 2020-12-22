@@ -97,7 +97,7 @@ type LatestRepository struct {
 }
 
 func main() {
-	Repositories = []string{"sensu-opsgenie-handler", "sensu-hangouts-chat-handler", "sensu-alertmanager-events", "sensu-grafana-mutator", "sensu-dynamic-check-mutator", "sensu-kubernetes-events"}
+	Repositories = []string{"sonarqube-to-gitlab-webhook", "event-logger", "sensu-opsgenie-handler", "sensu-hangouts-chat-handler", "sensu-alertmanager-events", "sensu-grafana-mutator", "sensu-dynamic-check-mutator", "sensu-kubernetes-events"}
 	var repos []string
 	for _, v := range Repositories {
 		github := fmt.Sprintf("%s/%s/releases/latest", Github, v)
