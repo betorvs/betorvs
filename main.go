@@ -102,7 +102,7 @@ func main() {
 	for _, v := range Repositories {
 		github := fmt.Sprintf("%s/%s/releases/latest", Github, v)
 		repo, err := getRepositories(github)
-		if err == nil {
+		if err == nil && repo.TagName != "" {
 			r := fmt.Sprintf("[%s](%s) %s - %s   \n", v, repo.HTMLURL, repo.TagName, repo.PublishedAt.Format(layoutISO))
 			// fmt.Println(r)
 			repos = append(repos, r)
