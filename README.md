@@ -28,3 +28,5 @@
 [sensu-grafana-mutator](https://github.com/betorvs/sensu-grafana-mutator/releases/tag/0.0.2-rc1) 0.0.2-rc1 - 2020-12-08   
 [sensu-dynamic-check-mutator](https://github.com/betorvs/sensu-dynamic-check-mutator/releases/tag/0.0.1-rc6) 0.0.1-rc6 - 2021-01-28   
 [sensu-kubernetes-events](https://github.com/betorvs/sensu-kubernetes-events/releases/tag/0.0.1-rc9) 0.0.1-rc9 - 2021-01-13   
+[secretreceiver](https://github.com/betorvs/secretreceiver/releases/tag/1.1.0) 1.1.0 - 2021-02-08   
+[secretpublisher](https://github.com/betorvs/secretpublisher/releases/tag/0.0.2) 0.0.2 - 2021-02-08   
