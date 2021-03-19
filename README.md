@@ -29,4 +29,4 @@
 [sensu-dynamic-check-mutator](https://github.com/betorvs/sensu-dynamic-check-mutator/releases/tag/0.0.1-rc10) 0.0.1-rc10 - 2021-02-11   
 [sensu-kubernetes-events](https://github.com/betorvs/sensu-kubernetes-events/releases/tag/0.0.1-rc11) 0.0.1-rc11 - 2021-03-03   
 [secretreceiver](https://github.com/betorvs/secretreceiver/releases/tag/1.1.2) 1.1.2 - 2021-02-18   
-[secretpublisher](https://github.com/betorvs/secretpublisher/releases/tag/0.0.3) 0.0.3 - 2021-02-18   
+[secretpublisher](https://github.com/betorvs/secretpublisher/releases/tag/0.0.4) 0.0.4 - 2021-03-19   
