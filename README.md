@@ -22,7 +22,7 @@
 ## 🤔 Latest Releases
 
 [event-logger](https://github.com/betorvs/event-logger/releases/tag/1.0.0) 1.0.0 - 2021-01-15   
-[sensu-opsgenie-handler](https://github.com/betorvs/sensu-opsgenie-handler/releases/tag/1.0.1) 1.0.1 - 2021-03-19   
+[sensu-opsgenie-handler](https://github.com/betorvs/sensu-opsgenie-handler/releases/tag/1.0.2) 1.0.2 - 2021-03-23   
 [sensu-hangouts-chat-handler](https://github.com/betorvs/sensu-hangouts-chat-handler/releases/tag/0.0.11) 0.0.11 - 2021-03-19   
 [sensu-alertmanager-events](https://github.com/betorvs/sensu-alertmanager-events/releases/tag/0.0.3-rc12) 0.0.3-rc12 - 2021-03-22   
 [sensu-grafana-mutator](https://github.com/betorvs/sensu-grafana-mutator/releases/tag/0.0.2-rc4) 0.0.2-rc4 - 2021-03-21   
