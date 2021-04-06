@@ -22,11 +22,11 @@
 ## 🤔 Latest Releases
 
 [event-logger](https://github.com/betorvs/event-logger/releases/tag/1.0.0) 1.0.0 - 2021-01-15   
-[sensu-opsgenie-handler](https://github.com/betorvs/sensu-opsgenie-handler/releases/tag/1.0.2) 1.0.2 - 2021-03-23   
+[sensu-opsgenie-handler](https://github.com/betorvs/sensu-opsgenie-handler/releases/tag/1.0.3) 1.0.3 - 2021-04-06   
 [sensu-hangouts-chat-handler](https://github.com/betorvs/sensu-hangouts-chat-handler/releases/tag/0.0.11) 0.0.11 - 2021-03-19   
 [sensu-alertmanager-events](https://github.com/betorvs/sensu-alertmanager-events/releases/tag/0.0.3-rc12) 0.0.3-rc12 - 2021-03-22   
 [sensu-grafana-mutator](https://github.com/betorvs/sensu-grafana-mutator/releases/tag/0.0.2-rc5) 0.0.2-rc5 - 2021-03-29   
-[sensu-dynamic-check-mutator](https://github.com/betorvs/sensu-dynamic-check-mutator/releases/tag/0.0.1-rc11) 0.0.1-rc11 - 2021-03-29   
-[sensu-kubernetes-events](https://github.com/betorvs/sensu-kubernetes-events/releases/tag/0.0.1-rc11) 0.0.1-rc11 - 2021-03-03   
+[sensu-dynamic-check-mutator](https://github.com/betorvs/sensu-dynamic-check-mutator/releases/tag/0.0.1-rc12) 0.0.1-rc12 - 2021-04-06   
+[sensu-kubernetes-events](https://github.com/betorvs/sensu-kubernetes-events/releases/tag/0.0.1-rc12) 0.0.1-rc12 - 2021-04-06   
 [secretreceiver](https://github.com/betorvs/secretreceiver/releases/tag/1.1.2) 1.1.2 - 2021-02-18   
 [secretpublisher](https://github.com/betorvs/secretpublisher/releases/tag/0.0.6) 0.0.6 - 2021-03-19   
