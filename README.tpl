@@ -3,8 +3,8 @@
 
 ## &#x270d; About me
 - 👨‍👩‍👦 I'm father full time and former Linux Sysadmin working with DevOps Culture/Job for long time...
--  🔭 I’m currently working on Observability related tools, like Prometheus, Grafana, Loki, Thanos, Tempo, Sensu and others related tools.
-- 🌱 I’m currently learning Golang and Observability softwares. Looking for Chaos Engineering softwares. 
+-  🔭 I’m currently working on Observability related tools, like Datadog, Prometheus, Grafana, Loki, Thanos, Tempo, Sensu and others related tools.
+- 🌱 I’m currently learning Golang and Observability softwares.
 
 ## 🔧 Technologies & Tools
 ![](https://img.shields.io/badge/OS-Linux-informational?style=flat&logo=linux&logoColor=white&color=2bbc8a)
