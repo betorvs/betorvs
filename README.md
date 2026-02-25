@@ -16,10 +16,3 @@ I have over 16+ years of experience across infrastructure, distributed systems, 
 ![](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
 ![](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
-
-
-## &#x1f4c8; GitHub Stats
-
-[![betorvs github stats](https://github-readme-stats.vercel.app/api?username=betorvs&show_icons=true)](https://github.com/betorvs/betorvs)
-
-
