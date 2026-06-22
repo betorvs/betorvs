@@ -21,6 +21,5 @@
 
 ## 🤔 Latest Releases
 
-[event-logger](https://github.com/betorvs/event-logger/releases/tag/1.0.0) 1.0.0 - 2021-01-15   
-[secretreceiver](https://github.com/betorvs/secretreceiver/releases/tag/1.1.2) 1.1.2 - 2021-02-18   
-[secretpublisher](https://github.com/betorvs/secretpublisher/releases/tag/0.0.6) 0.0.6 - 2021-03-19   
+[dvorah](https://github.com/betorvs/dvorah/releases/tag/v0.7.0) v0.7.0 - 2026-06-12   
+[binding-validating-admission-policies](https://github.com/betorvs/binding-validating-admission-policies/releases/tag/v0.2.0) v0.2.0 - 2026-06-05   
