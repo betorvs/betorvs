@@ -99,21 +99,29 @@ type LatestRepository struct {
 }
 
 func main() {
-	Repositories = []string{"dvorah", "binding-validating-admission-policies"}
+	Repositories := []string{}
 	repo, ok := os.LookupEnv("REPOSITORY_LIST")
 	if ok {
-		Repositories = strings.Split(repo, ",")
+		list := strings.Split(repo, ",")
+		for _, v := range list {
+			Repositories = append(Repositories, strings.TrimSpace(v))
+		}
 	}
 	var repos []string
 	client := newClientWeb()
-	for _, v := range Repositories {
-		github := fmt.Sprintf("%s/%s/releases/latest", Github, v)
-		repo, err := client.getRepositories(github)
-		if err == nil && repo.TagName != "" {
-			r := fmt.Sprintf("[%s](%s) %s - %s   \n", v, repo.HTMLURL, repo.TagName, repo.PublishedAt.Format(layoutISO))
-			repos = append(repos, r)
+	if len(Repositories) != 0 {
+		for _, v := range Repositories {
+			github := fmt.Sprintf("%s/%s/releases/latest", Github, v)
+			repo, err := client.getRepositories(github)
+			if err == nil && repo.TagName != "" {
+				r := fmt.Sprintf("[%s](%s) %s - %s   \n", v, repo.HTMLURL, repo.TagName, repo.PublishedAt.Format(layoutISO))
+				repos = append(repos, r)
+			}
 		}
+	} else {
+		fmt.Println("Nothing to do")
 	}
+
 	f, err := os.Create(path)
 	if err != nil {
 		fmt.Println("create file: ", err)
