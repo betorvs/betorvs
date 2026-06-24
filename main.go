@@ -4,9 +4,11 @@ import (
 	"encoding/json"
 	"fmt"
 	"html/template"
-	"io/ioutil"
+	"io"
+
 	"net/http"
 	"os"
+	"strings"
 	"time"
 )
 
@@ -98,13 +100,17 @@ type LatestRepository struct {
 
 func main() {
 	Repositories = []string{"dvorah", "binding-validating-admission-policies"}
+	repo, ok := os.LookupEnv("REPOSITORY_LIST")
+	if ok {
+		Repositories = strings.Split(repo, ",")
+	}
 	var repos []string
+	client := newClientWeb()
 	for _, v := range Repositories {
 		github := fmt.Sprintf("%s/%s/releases/latest", Github, v)
-		repo, err := getRepositories(github)
+		repo, err := client.getRepositories(github)
 		if err == nil && repo.TagName != "" {
 			r := fmt.Sprintf("[%s](%s) %s - %s   \n", v, repo.HTMLURL, repo.TagName, repo.PublishedAt.Format(layoutISO))
-			// fmt.Println(r)
 			repos = append(repos, r)
 		}
 	}
@@ -119,14 +125,21 @@ func main() {
 		fmt.Println("executing template:", err)
 	}
 	f.Close()
-	// fmt.Println(repos)
 }
 
-func getRepositories(github string) (LatestRepository, error) {
-	result := LatestRepository{}
+type clientWeb struct {
+	web *http.Client
+}
+
+func newClientWeb() *clientWeb {
 	client := &http.Client{
 		Timeout: time.Second * 10,
 	}
+	return &clientWeb{web: client}
+}
+
+func (client *clientWeb) getRepositories(github string) (LatestRepository, error) {
+	result := LatestRepository{}
 	req, err := http.NewRequest(http.MethodGet, github, nil)
 	if err != nil {
 		fmt.Printf("[ERROR]  GET %s", err)
@@ -135,17 +148,16 @@ func getRepositories(github string) (LatestRepository, error) {
 	req.Header.Set("Accept", "application/vnd.github.v3+json")
 	token := fmt.Sprintf("token %s", os.Getenv("GITHUB_TOKEN"))
 	req.Header.Add("Authorization", token)
-	resp, err := client.Do(req)
+	resp, err := client.web.Do(req)
 	if err != nil {
 		fmt.Printf("[ERROR] client %s", err)
 		return result, err
 	}
-	res, err := ioutil.ReadAll(resp.Body)
+	res, err := io.ReadAll(resp.Body)
 	if err != nil {
 		fmt.Printf("[ERROR] ReadAll %s", err)
 		return result, err
 	}
-	// fmt.Println(resp.Status)
 	_ = json.Unmarshal(res, &result)
 
 	defer resp.Body.Close()
