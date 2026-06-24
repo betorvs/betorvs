@@ -25,6 +25,10 @@
 
 ## 🤔 Latest Releases
 
-[dvorah](https://github.com/betorvs/dvorah/releases/tag/v0.7.0) v0.7.0 - 2026-06-12   
-[binding-validating-admission-policies](https://github.com/betorvs/binding-validating-admission-policies/releases/tag/v0.2.0) v0.2.0 - 2026-06-05   
-[iac-terraform-modules](https://github.com/betorvs/iac-terraform-modules/releases/tag/aws/s3bucket/v1.0.0) aws/s3bucket/v1.0.0 - 2026-06-24   
+[dvorah](https://github.com/betorvs/dvorah) 
+  [v0.7.0](https://github.com/betorvs/dvorah/releases/tag/v0.7.0) - 2026-06-12   
+[binding-validating-admission-policies](https://github.com/betorvs/binding-validating-admission-policies) 
+  [v0.2.0](https://github.com/betorvs/binding-validating-admission-policies/releases/tag/v0.2.0) - 2026-06-05   
+[iac-terraform-modules](https://github.com/betorvs/iac-terraform-modules) 
+  [aws/s3bucket/v1.0.0](https://github.com/betorvs/iac-terraform-modules/releases/tag/aws/s3bucket/v1.0.0) - 2026-06-24   
+  [aws/github-oidc/v1.0.0](https://github.com/betorvs/iac-terraform-modules/releases/tag/aws/github-oidc/v1.0.0) - 2026-06-24   
