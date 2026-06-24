@@ -116,15 +116,15 @@ func main() {
 			repos, err := client.getRepositories(github)
 			if err == nil {
 				head := ""
-				var line strings.Builder
+				lines := []string{}
 				for _, repo := range repos {
 					if head == "" {
-						head = fmt.Sprintf("[%s](%s/%s) \n", v, MyRepos, v)
+						head = fmt.Sprintf("[%s](%s/%s) ", v, MyRepos, v)
 					}
-					r := fmt.Sprintf("  [%s](%s) - %s   \n", repo.TagName, repo.HTMLURL, repo.PublishedAt.Format(layoutISO))
-					line.WriteString(r)
+					r := fmt.Sprintf("[%s](%s) - %s", repo.TagName, repo.HTMLURL, repo.PublishedAt.Format(layoutISO))
+					lines = append(lines, r)
 				}
-				result = head + line.String()
+				result = fmt.Sprintf("%s: %v", head, lines)
 
 			}
 			list = append(list, result)
