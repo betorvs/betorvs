@@ -121,10 +121,10 @@ func main() {
 					if head == "" {
 						head = fmt.Sprintf("[%s](%s/%s)", v, MyRepos, v)
 					}
-					r := fmt.Sprintf("[%s](%s) - %s", repo.TagName, repo.HTMLURL, repo.PublishedAt.Format(layoutISO))
+					r := fmt.Sprintf("tag: [%s](%s) - published at: %s", repo.TagName, repo.HTMLURL, repo.PublishedAt.Format(layoutISO))
 					lines = append(lines, r)
 				}
-				result = fmt.Sprintf("%s: %v   \n", head, lines)
+				result = fmt.Sprintf("%s: %v   \n", head, strings.Join(lines, ","))
 
 			}
 			list = append(list, result)
