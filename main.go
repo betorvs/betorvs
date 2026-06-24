@@ -124,7 +124,7 @@ func main() {
 					r := fmt.Sprintf("[%s](%s) - %s", repo.TagName, repo.HTMLURL, repo.PublishedAt.Format(layoutISO))
 					lines = append(lines, r)
 				}
-				result = fmt.Sprintf("%s: %v", head, lines)
+				result = fmt.Sprintf("%s: %v\n", head, lines)
 
 			}
 			list = append(list, result)
