@@ -26,4 +26,3 @@
 ## 🤔 Latest Releases
 
 [dvorah](https://github.com/betorvs/dvorah/releases/tag/v0.7.0) v0.7.0 - 2026-06-12   
-[binding-validating-admission-policies](https://github.com/betorvs/binding-validating-admission-policies/releases/tag/v0.2.0) v0.2.0 - 2026-06-05   
