@@ -17,15 +17,11 @@ const (
 	Github    = "https://api.github.com/repos/betorvs"
 	layoutISO = "2006-01-02"
 	path      = "README.md"
+	MyRepos   = "https://github.com/betorvs"
 )
 
-var (
-	// Repositories list of
-	Repositories []string
-)
-
-// LatestRepository struct
-type LatestRepository struct {
+// Repository struct
+type Repository struct {
 	URL             string    `json:"url"`
 	HTMLURL         string    `json:"html_url"`
 	AssetsURL       string    `json:"assets_url"`
@@ -99,24 +95,39 @@ type LatestRepository struct {
 }
 
 func main() {
-	Repositories := []string{}
+	repositories := []string{}
 	repo, ok := os.LookupEnv("REPOSITORY_LIST")
 	if ok {
 		list := strings.Split(repo, ",")
 		for _, v := range list {
-			Repositories = append(Repositories, strings.TrimSpace(v))
+			repositories = append(repositories, strings.TrimSpace(v))
 		}
 	}
-	var repos []string
+	var list []string
 	client := newClientWeb()
-	if len(Repositories) != 0 {
-		for _, v := range Repositories {
-			github := fmt.Sprintf("%s/%s/releases/latest", Github, v)
-			repo, err := client.getRepositories(github)
-			if err == nil && repo.TagName != "" {
-				r := fmt.Sprintf("[%s](%s) %s - %s   \n", v, repo.HTMLURL, repo.TagName, repo.PublishedAt.Format(layoutISO))
-				repos = append(repos, r)
+	if len(repositories) != 0 {
+		for _, v := range repositories {
+			result := ""
+			perPage := 1
+			if strings.Contains(v, "modules") {
+				perPage = 5
 			}
+			github := fmt.Sprintf("%s/%s/releases?per_page=%d", Github, v, perPage)
+			repos, err := client.getRepositories(github)
+			if err == nil {
+				head := ""
+				var line strings.Builder
+				for _, repo := range repos {
+					if head == "" {
+						head = fmt.Sprintf("[%s](%s/%s) \n", v, MyRepos, v)
+					}
+					r := fmt.Sprintf("  [%s](%s) - %s   \n", repo.TagName, repo.HTMLURL, repo.PublishedAt.Format(layoutISO))
+					line.WriteString(r)
+				}
+				result = head + line.String()
+
+			}
+			list = append(list, result)
 		}
 	} else {
 		fmt.Println("Nothing to do")
@@ -128,7 +139,7 @@ func main() {
 	}
 	t := template.New("README.tpl") // Create a template.
 	t, _ = t.ParseFiles("./README.tpl")
-	err = t.Execute(f, repos)
+	err = t.Execute(f, list)
 	if err != nil {
 		fmt.Println("executing template:", err)
 	}
@@ -146,8 +157,8 @@ func newClientWeb() *clientWeb {
 	return &clientWeb{web: client}
 }
 
-func (client *clientWeb) getRepositories(github string) (LatestRepository, error) {
-	result := LatestRepository{}
+func (client *clientWeb) getRepositories(github string) ([]Repository, error) {
+	result := []Repository{}
 	req, err := http.NewRequest(http.MethodGet, github, nil)
 	if err != nil {
 		fmt.Printf("[ERROR]  GET %s", err)
